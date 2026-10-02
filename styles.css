@@ -610,3 +610,9 @@ h1, h2, h3 { color: var(--ink); font-family: var(--serif); font-weight: 600; mar
 @media (max-width: 760px) {
   .teaser-links { align-items: flex-start; }
 }
+
+.lead-block + .lead-block {
+  margin-top: 44px;
+  padding-top: 44px;
+  border-top: 1px solid var(--rule);
+}
