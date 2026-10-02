@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Brady Ward</title>
+  <meta name="description" content="Projects by Brady Ward, including the Financial Literacy News Hub built for Penn State's Sokolov-Miller Family Financial & Life Skills Center.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="wordmark">Brady Ward</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="assets/Brady-Ward-Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="page-intro">
+      <div class="wrap">
+        <p class="eyebrow">Projects</p>
+        <h1>Things I've built</h1>
+        <p class="lede">
+          Working tools I've made outside of the classroom &mdash; mostly aimed at making
+          financial information easier for people to find and use.
+        </p>
+      </div>
+    </section>
+
+    <section class="section project-list">
+      <div class="wrap">
+
+        <!-- ===== Project: News Hub ===== -->
+        <article id="news-hub" class="project reveal">
+          <div class="project-head">
+            <p class="card-kicker">
+              <span class="status status-done">Live</span>
+              2026 &middot; Sokolov-Miller Family Financial &amp; Life Skills Center
+            </p>
+            <h2>Financial Literacy News Hub</h2>
+            <p class="project-summary">
+              A free briefing site for the center's staff that gathers the week's news on
+              student loans, FAFSA and financial aid, consumer credit and banking, and
+              financial-literacy teaching &mdash; and rebuilds itself every Monday morning
+              with no one touching it.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <div class="shots">
+              <figure class="shot">
+                <a href="https://bward0642.github.io/News-Hub/" target="_blank" rel="noopener">
+                  <div class="browser-bar"><span></span><span></span><span></span></div>
+                  <img src="assets/news-hub-this-week.jpg" width="1600" height="864" loading="lazy"
+                       alt="The News Hub's This Week tab, with a Heads up box of student loan deadlines, topic filters, and teaching tips">
+                </a>
+                <figcaption>This Week &mdash; the weekly briefing, with deadlines flagged up top.</figcaption>
+              </figure>
+              <figure class="shot">
+                <a href="https://bward0642.github.io/News-Hub/markets.html" target="_blank" rel="noopener">
+                  <div class="browser-bar"><span></span><span></span><span></span></div>
+                  <img src="assets/news-hub-market-watch.jpg" width="800" height="500" loading="lazy"
+                       alt="The News Hub's Market Watch tab, showing key numbers like the S&amp;P 500, Dow, Nasdaq, and 10-year Treasury yield with three-month trend lines">
+                </a>
+                <figcaption>Market Watch &mdash; key numbers with 3-month trends.</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-detail">
+              <h3>What it does</h3>
+              <ul class="project-points">
+                <li><strong>This Week:</strong> news sorted by topic, with a &ldquo;Heads up&rdquo; box for deadlines and rule changes.</li>
+                <li><strong>Market Watch:</strong> a factual week-in-brief and key numbers with 3-month trends &mdash; stocks, rates, mortgages, gas, inflation, unemployment, and credit card APR.</li>
+                <li><strong>Policy:</strong> federal rules, laws, and bills, plus state-level coverage filterable by state, Pennsylvania first.</li>
+                <li><strong>Neutral by design:</strong> partisan outlets, charged headlines, and opinion columns are filtered out automatically.</li>
+                <li>Searchable archive of every past week and a printable layout for team meetings.</li>
+              </ul>
+
+              <h3>Sources</h3>
+              <p>
+                StudentAid.gov, the Federal Register, CFPB, FTC, the Federal Reserve, FDIC,
+                FRED, BLS, BEA, and others.
+              </p>
+
+              <h3>How I built it</h3>
+              <p>
+                I built the News Hub with Claude, Anthropic's AI assistant, using Claude Code &mdash;
+                a skill set I picked up through Anthropic's Claude Code course. I defined what the
+                center's staff needed, chose the sources and the rules for keeping coverage neutral,
+                and worked with Claude to write, test, and refine the code that fetches the news and
+                builds the site each week.
+              </p>
+
+              <h3>Built with</h3>
+              <ul class="tags">
+                <li>Claude Code</li><li>Python</li><li>Jinja2</li><li>GitHub Actions</li><li>GitHub Pages</li><li>RSS feeds</li><li>FRED data</li>
+              </ul>
+
+              <p class="project-cost">Runs at $0 &mdash; no paid services, accounts, or API keys.</p>
+
+              <div class="project-links">
+                <a class="btn btn-solid" href="https://bward0642.github.io/News-Hub/" target="_blank" rel="noopener">Visit live site &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Add new projects here =====
+             Copy the whole <article class="project reveal"> ... </article> block above,
+             give it a new id, and update the text. For a finished project, change
+             status-wip / "In progress" to status-done / "Live".
+        -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; <span id="year">2026</span> Brady Ward</span>
+      <a href="index.html">&larr; Back to home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
